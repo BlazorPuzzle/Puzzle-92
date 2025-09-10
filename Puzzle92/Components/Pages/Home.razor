@@ -1,0 +1,28 @@
+﻿@page "/"
+@* @rendermode InteractiveServer *@
+
+<PageTitle>Home</PageTitle>
+
+<h1>Puzzle 92 - Just a LITTLE interactive</h1>
+
+<p>
+	This application is a Blazor Static Server Rendered app.
+</p>
+<p>
+	In this puzzle, we've got a custom button component that 
+	you can click and it writes a log message.  We've added the button 
+	just below this paragraph.
+</p>
+
+<MyButton LogMessage="You clicked the button on the Home page"></MyButton>
+
+<p>
+	By default, this button will not do anything when clicked, because
+	we have not activated the Blazor interactivity on this page.  The rendermode
+	directive is commented out at the top of this file.  If you uncomment it,
+	then the button will work.
+</p>
+
+<p>
+	What if we want to place the button in the layout so that it is always available?
+</p>
