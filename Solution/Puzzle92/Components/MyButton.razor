@@ -1,0 +1,14 @@
+@* @rendermode InteractiveServer *@
+<button @onclick="OnClick">
+	Click Me!
+</button>
+@code {
+
+	[Parameter]
+	public string LogMessage { get; set; } = "Click Me!";
+
+	private void OnClick()
+	{
+		Console.WriteLine(LogMessage);
+	}
+}
